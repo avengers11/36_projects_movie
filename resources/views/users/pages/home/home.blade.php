@@ -32,7 +32,7 @@
             <div class="swiper-wrapper">
                 @foreach ($slider as $item)
                     <a href="{{ $item['links'] }}" class="swiper-slide">
-                        <img style="height:30vh" src="{{ asset('images/slider/'.$item['img']) }}" alt="">
+                        <img style="height:25vh" src="{{ asset('images/slider/'.$item['img']) }}" alt="">
                     </a>
                 @endforeach
             </div>

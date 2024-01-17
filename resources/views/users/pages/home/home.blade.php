@@ -104,7 +104,7 @@
                                     $links = $item['links'];
                                 }
                             @endphp
-                                <a href="{{ $links }}" class="col-6 mt-3">
+                                <a href="{{ $links }}" class="col-6 mt-3 mb-1">
                                     <img class="images" src="{{ asset('images/products/'.$item['pic']) }}" alt="">
                                     <h2 class="title">{{ $item['name'] }}</h2>
                                 </a>

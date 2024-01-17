@@ -100,7 +100,7 @@ body{
             border-radius: 7px;
         }
         h2.title{
-            font-size: 1.5rem;
+            font-size: 16px;
             color: white;
             text-align: center;
         }
@@ -138,6 +138,9 @@ body{
   }
 }
 #all_products_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   h4.text-danger.title.col-12 {
     font-size: 1rem;
     text-align: center;

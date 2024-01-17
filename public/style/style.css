@@ -104,7 +104,7 @@ body {
   border-radius: 7px;
 }
 .row .col-6 h2.title {
-  font-size: 1.5rem;
+  font-size: 16px;
   color: white;
   text-align: center;
 }
@@ -143,6 +143,11 @@ body {
   text-align: center;
 }
 
+#all_products_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #all_products_wrapper h4.text-danger.title.col-12 {
   font-size: 1rem;
   text-align: center;

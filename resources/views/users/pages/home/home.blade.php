@@ -7,7 +7,7 @@
     <title>WELCOME</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{ asset('style/style.css') }}?v=2.0.0">
+    <link rel="stylesheet" href="{{ asset('style/style.css') }}?v=3.0.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -93,20 +93,24 @@
                 </div>
             @endif
 
-            <div id="all_products_wrapper" class="row">
-                @foreach ($products as $item)
-                    @php
-                        if(Route::is("users_livetv_web")){
-                            $links = $item['links1'];
-                        }else{
-                            $links = $item['links'];
-                        }
-                    @endphp
-                    <a href="{{ $links }}" class="col-6 mt-3">
-                        <img class="images" src="{{ asset('images/products/'.$item['pic']) }}" alt="">
-                        <h2 class="title">{{ $item['name'] }}</h2>
-                    </a>
-                @endforeach
+            <div id="all_products_wrapper" class="row ">
+                <div class="col-8">
+                    <div class="row">
+                        @foreach ($products as $item)
+                            @php
+                                if(Route::is("users_livetv_web")){
+                                    $links = $item['links1'];
+                                }else{
+                                    $links = $item['links'];
+                                }
+                            @endphp
+                                <a href="{{ $links }}" class="col-6 mt-3">
+                                    <img class="images" src="{{ asset('images/products/'.$item['pic']) }}" alt="">
+                                    <h2 class="title">{{ $item['name'] }}</h2>
+                                </a>
+                        @endforeach
+                    </div>
+                </div>
             </div>
         </div>
 

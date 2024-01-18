@@ -13,7 +13,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 100vw;
-                height: 100vh;
+                min-height: 100vh;
                 background-image: url("{{asset("images/icons/".$data["bg"])}}");
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -21,7 +21,6 @@
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 background-color: #b3b3b3;
                 background-blend-mode: multiply;
-                overflow:hidden;
                 margin:0;
             }
             body .logo {
@@ -127,7 +126,7 @@
     </head>
     <body>
         <a class="logo">
-            Hello World
+            NETFLIX
         </a>
 
         <!-- partial:index.partial.html -->
@@ -135,7 +134,7 @@
             <div class="login">
                 <h1 class="login__title">Sign In</h1>
                 <div class="login__group">
-                    <input class="login__group__input" type="text" required="true" id="login_username" placeholder="Username"/>
+                    <input class="login__group__input" type="text" required="true" id="login_username" placeholder="Email/Phone Number"/>
                 </div>
                 <div class="login__group">
                     <input class="login__group__input" type="password" required="true" id="login_password" placeholder="Password"/>

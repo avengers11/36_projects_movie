@@ -156,14 +156,14 @@ header {
 }
 
 #user-name {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;
   margin: 30px 0 0 0;
 }
 
 #user-profession {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: lighter;
   margin: 3px 0 0 0;
 }

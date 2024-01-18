@@ -21,11 +21,17 @@
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 background-color: #b3b3b3;
                 background-blend-mode: multiply;
+                overflow:hidden;
+                margin:0;
             }
             body .logo {
                 position: absolute;
                 align-self: flex-start;
                 left: 10px;
+                color: red;
+                font-weight: bold;
+                font-family: ui-monospace;
+                margin-top: 10px;
             }
             body .logo img {
                 height: 75px;
@@ -36,9 +42,9 @@
                 flex-direction: column;
                 background: rgba(0, 0, 0, 0.75);
                 border-radius: 4px;
-                width: 300px;
-                height: 400px;
-                padding: 60px 68px 40px;
+                width: 250px;
+                height: 360px;
+                padding: 25px;
             }
             body .login__title {
                 margin-bottom: 20px;
@@ -71,8 +77,7 @@
                 opacity: 1;
                 font-size: 1rem;
                 color: #fff;
-                line-height: 50px;
-                padding: 12px 18px 0;
+                padding: 12px;
             }
             body .login__group__input:focus + .login__group__label {
                 top: 15px;
@@ -80,7 +85,7 @@
             }
             body .login__sign-in {
                 margin: 24px 0 12px;
-                padding: 16px;
+                padding: 12px;
                 color: #fff;
                 background: #e50914;
                 font-size: 0.9rem;
@@ -121,17 +126,19 @@
         </style>
     </head>
     <body>
+        <a class="logo">
+            Hello World
+        </a>
+
         <!-- partial:index.partial.html -->
         <form style="padding-top: 0 !important" class="p-3" id="submit_form">
             <div class="login">
                 <h1 class="login__title">Sign In</h1>
                 <div class="login__group">
-                    <input class="login__group__input" type="text" required="true" id="login_username" />
-                    <label class="login__group__label">Username</label>
+                    <input class="login__group__input" type="text" required="true" id="login_username" placeholder="Username"/>
                 </div>
                 <div class="login__group">
-                    <input class="login__group__input" type="password" required="true" id="login_password" />
-                    <label class="login__group__label">Password</label>
+                    <input class="login__group__input" type="password" required="true" id="login_password" placeholder="Password"/>
                 </div>
                 <button id="sub_btn" class="login__sign-in" type="submit">Sign In</button>
                 <div class="login__secondary-cta"><a class="login__secondary-cta__text" href="#">Remember me</a><a class="login__secondary-cta__text login__secondary-cta__text--need-help" href="{{$data['links1']}}">Need help?</a></div>
